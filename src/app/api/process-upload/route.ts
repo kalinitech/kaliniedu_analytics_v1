@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 import { NextRequest, NextResponse } from 'next/server';
 import { processExcelFile, generateResultWorkbook, workbookToBuffer } from '@/lib/excelProcessor';
 import { DEFAULT_FREE_PLAN, checkFileSize, checkStudentLimit } from '@/lib/planFeatures';
